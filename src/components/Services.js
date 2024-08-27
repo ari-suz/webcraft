@@ -14,94 +14,61 @@ const Services = () => {
   const rows = [
     {
       key: "0",
-      size: "4x8",
-      area: "32 sq. ft.",
-      price: "$3,288",
+      service: "Single-page custom site",
+      description: "Fully custom, single-page website for your business.",
+      rate: "$100/hour (1-2 days, depending on complexity)",
     },
     {
       key: "1",
-      size: "4x10",
-      area: "40 sq. ft.",
-      price: "$4,037",
+      service: "Multi-page custom site",
+      description: "Fully custom, multi-page website for your business.",
+      rate: "$100/hour (2-4 days, depending on complexity)",
     },
     {
       key: "2",
-      size: "4x12",
-      area: "48 sq. ft.",
-      price: "$4,367",
+      service: "Website maintenence",
+      description: "Receieve 24/7 support for your site, unlimited change requests.",
+      rate: "$100/month",
     },
     {
       key: "3",
-      size: "4x8",
-      area: "32 sq. ft.",
-      price: "$3,288",
-    },
-    {
-      key: "4",
-      size: "4x8",
-      area: "32 sq. ft.",
-      price: "$3,288",
-    },
-    {
-      key: "5",
-      size: "4x8",
-      area: "32 sq. ft.",
-      price: "$3,288",
-    },
-    {
-      key: "6",
-      size: "4x8",
-      area: "32 sq. ft.",
-      price: "$3,288",
-    },
-    {
-      key: "7",
-      size: "4x8",
-      area: "32 sq. ft.",
-      price: "$3,288",
-    },
-    {
-      key: "8",
-      size: "4x8",
-      area: "32 sq. ft.",
-      price: "$3,288",
+      service: "Wix website build & training",
+      description: "Custom multi-page Wix website plus training session to learn how to maintain your site.",
+      rate: "$1200 (website + 2 hour training session)",
     },
   ];
   
   const columns = [
     {
-      key: "size",
-      label: "Shed Size",
+      key: "service",
+      label: "Service",
     },
     {
-      key: "area",
-      label: "Area",
+      key: "description",
+      label: "Description",
     },
     {
-      key: "price",
-      label: "Base Price",
+      key: "rate",
+      label: "Starting Rate",
     },
   ];
   return (
-    <div className="pricing-table">
-      <div className="pricing-header">
-        <p>Below we have provided a pricing chart to give an idea of a starting price.</p>
+    <div className="services-table">
+      <div className="services-header">
+        <h4>The chart below provides an introduciton to the services we offer.</h4>
       </div>
-      <Table aria-label="Pricing table">
+      <Table aria-label="Services table">
         <TableHeader columns={columns}>
         {(column) => <TableColumn key={column.key}>{column.label}</TableColumn>}
         </TableHeader>
         <TableBody items={rows}>
           {(item) => (
-          <TableRow key={item.key}>
+          <TableRow key={item.key} className="row-styling">
             {(columnKey) => <TableCell>{getKeyValue(item, columnKey)}</TableCell>}
           </TableRow>
           )}
         </TableBody>
       </Table>
-      <div className="pricing-header">
-        <h2>Included Features</h2>
-      </div>
     </div>
   );
 };

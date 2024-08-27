@@ -3,20 +3,21 @@ import Form from "./components/Form";
 import Home from "./components/Home";
 import Nav from "./components/Nav";
 import Services from "./components/Services";
-// import Work from "./components/Work";
+import Footer from "./components/Footer";
+import "./css/app.css";
 
 function App() {
   return (
     <div className="App">
-      <Nav/>
+      <Nav />
       <div>
         <Routes>        
           <Route path="/"  element={<Home />} />
           <Route path="/contact"  element={<Form />}/>
           <Route path="/services" element={<Services />}/>
-          {/* <Route path="/our-work" element={<Work />}/> */}
         </Routes>
       </div>
+      <Footer />
     </div>
   );
 }
