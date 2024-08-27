@@ -1,0 +1,38 @@
+.pricing-table {
+  margin: 2rem;
+  font-size: 1.5rem;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  margin: 0 5rem;
+}
+
+tr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+td {
+  margin: 0.25rem 5rem;
+  align-self: center;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(250, 249, 246);
+}
