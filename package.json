@@ -1,7 +1,10 @@
 {
-  "name": "eastbaysheds",
+  "name": "webcraft",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "17.4"
+  },
   "dependencies": {
     "@formspree/react": "^2.5.1",
     "@nextui-org/button": "^2.0.37",
