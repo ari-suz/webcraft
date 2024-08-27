@@ -51,7 +51,7 @@ const Form = () => {
         </p>
       </div>
       <div className="contact-form">
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} method="POST">
           <label>Your Name:</label>
           <input type="text"
             name="customerName"
