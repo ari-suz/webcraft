@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useForm, ValidationError } from '@formspree/react';
+import { useForm } from '@formspree/react';
 import "../css/form.css";
 
 const Form = () => {
