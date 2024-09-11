@@ -1,14 +1,21 @@
+@import url('satoshi.css');
+
 main, body {
   height: 100%;
 }
 
 body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: Satoshi-Regular;
+  /* font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; */
   font-weight: 1.5;
   line-height: 1.5;
   color: #292b2c;
-  background-color: rgba(250, 249, 246, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: Satoshi-Bold;
 }
 
 .App {
